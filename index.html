@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventBoard</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<header>
+    <h1>EventBoard</h1>
+    <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
+</header>    
+
+<h2 class="Titulo">¡Eventos!</h2>    
+   
+  <main id="producto-contenedor">
+    
+  </main>
+
+  <div class="modal-contenedor">
+      <div class="modal-carrito">
+          <h3>Carrito</h3>
+          <button id="btn-cerrar-carrito"><i class="fas fa-times-circle"></i></button>
+          <div id="contenedor-carrito">
+
+          </div>
+     
+          <p class="precioProducto">Precio total: $<span id="precioTotal"></span></p>
+      </div>
+  </div>
+ 
+<script src="stock.js" type="module"></script>    
+<script src="App.js" type="module"></script>
+<script src="modal.js" type="module"></script>
+<script src="carritoIndex.js" type="module"></script>
+<script src="actualizarCarrito.js" type="module"></script>
+<script src="index.js" type="module"></script>
+<script src="getData.js" type="module"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    
+</body>
+</html>
